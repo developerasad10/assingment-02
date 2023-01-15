@@ -1,109 +1,336 @@
 * {
-    margin: 0px;
-    padding: 0px;
-  }
+  margin: 0px;
+  padding: 0px;
+}
+
+/*--------------------
+    font-awesome-font 
+ --------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/* body font-style */
+/* ---------------------- */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgba(255, 144, 14, 0.1);
+}
+.container {
+  width: 1164px;
+}
+
+/*--------------------
+     Header-styles 
+----------------------*/
+.text-style {
+  color: #fff;
+  margin-left: 10px;
+}
+.text-style:hover {
+  color: #ff005c;
+  margin-left: 10px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  background: #0b0a11;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+}
+.mobile-menu {
+  display: none !important;
+  color: #fff;
+}
+nav .navbar-list a {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+.navbar-list a i{
+  color: #fff !important;
+}
+nav .navbar-list a:hover {
+  color: #ff005c;
+}
+nav .navbar-list > a {
+  padding: 20px;
+}
+
+.banner_section-area{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+ 
   
-  /*--------------------
-      font-awesome-font 
-   --------------------*/
+}
+
+.banner_content{
+  text-align: center;
+  margin-top: 20px;
   
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+}
+.banner_content h1{
+   font-size: 36px;
+   font-weight: bold; 
+}
+
+.btn-hero{
+  padding: 18px 25px ;
+  background-color: #FF900E;
+  display: block;
+  margin: 0px auto;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+.btn-hero:hover{
+  background-color: #ff005c;
+  transition: 1s;
+  transform: rotate(180deg);
+  transition: transform 3s ease-in-out;
   
-  /* body font-style */
-  /* ---------------------- */
-  
-  body {
-    font-family: "Poppins", sans-serif;
-    background: rgba(255, 144, 14, 0.1);
-  }
+}
+.banner_content img{
+  width: 80%;
+  display: block;
+  margin: 0px auto;
+ 
+}
+
+/*-- 4 number section Some Facts */
+
+.main_container-section_facts{
+margin-top: 10%;
+margin-left: 10%;
+
+}
+.facts_title{
+margin-top: 10px;
+ font-weight: bold;
+ text-align: left;
+ font-size: 28px;
+}
+.text_content{
+text-align: left;
+font-size: 16px;
+}
+.some_Facts_container_card{
+ margin-top: 5%;
+ margin-left: 3%;
+ margin-right: 5%;
+ display: grid;
+ grid-gap: 5px;
+ text-align: center;
+ grid-template-columns: repeat(4, 1fr);
+ 
+ 
+}
+.facts-card_container{
+border: 1px solid #FF900E;
+margin: 10px;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+
+
+
+/* section 5 our-sponsor */
+.our_sponsor-area{
+margin-top: 5%;
+margin-left: 5%;
+}
+.our_sponsor{
+text-align: center;
+}
+.our_sponsor_title{
+font-size: 24px;
+font-weight: bold;
+}
+.soponsor_text{
+line-height: 30px;
+
+}
+
+.sponsor_card{
+ margin-left: 3%;
+ margin-right: 5%;
+ display: grid;
+ grid-gap: 5px;
+ text-align: center;
+ grid-template-columns: repeat(5, 1fr);
+}
+.sponsor_content{
+margin: 10px;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+
+
+
+
+/* footer section area */
+
+.footer_container{
+background-color: black;
+padding: 20px;
+
+}
+.footer_container_text{
+text-align: center;
+color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------
+                          Responsive CSS
+------------------------------------------------------------------*/
+
+/*======= Tablet Device ======= */
+
+@media only screen and (max-width: 992px) {
   .container {
-    width: 1164px;
+    width: 90%;
   }
-  
-  /*--------------------
-       Header-styles 
-  ----------------------*/
-  .text-style {
-    color: #fff;
-    margin-left: 10px;
-  }
-  .text-style:hover {
-    color: #ff005c;
-    margin-left: 10px;
-  }
-  header {
-    display: flex;
-    justify-content: center;
-    background: #0b0a11;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 44px;
-  }
+
   .mobile-menu {
-    display: none !important;
-    color: #fff;
+    display: inline-block !important;
+    height: 24px;
+    width: 24px;
   }
   nav .navbar-list a {
-    color: #ffffff;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    text-decoration: none;
-  }
-  nav .navbar-list a:hover {
-    color: #ff005c;
-  }
-  nav .navbar-list > a {
-    padding: 20px;
+    display: none;
   }
 
-  .banner_section-area{
+  nav .icon span {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  nav .navbar-list > a {
+    padding: 16px;
+  }
+
+  .banner-title {
+    width: 330px;
+  }
+
+  .banner-title h1 {
+    font-size: 42px;
+    line-height: 62px;
+  }
+
+  .banner-image img {
+    width: 349px;
+
+  }
+
+  .banner_section-area {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .some_Facts_container_card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    text-align: center;
+  }
+  .sponsor_card{
+    margin-left: 3%;
+    margin-right: 5%;
+    display: grid;
+    grid-gap: 5px;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+ }
+ .sponsor_content{
+   margin: 10px;
+   padding-top: 40px;
+   padding-bottom: 40px;
+ } 
+ 
+}
+
+/*======= Mobile Device ======= */
+
+
+
+@media only screen and (max-width: 688px) {
+  .banner_content {
+    margin-bottom: 50px;
+  }
+  .main_container-section_facts{
+     margin-top: 10%;
+     margin-left: 10%;
+    
+   }
+  .banner-title h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    color: #ffffff;
+    padding-bottom: 10px;
+  }
+  .banner_content p{
+    text-align: center;
+    padding: 10px;
+  }
+  .banner_content img {
+    width: 359px;
+  }
+
+  .banner_section-area {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-   
-    
+    grid-column-gap: 5px;
   }
   
-  .banner_content h1,p{
+  .some_Facts_container_card{
+    margin-right: 5%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
     text-align: center;
-    margin-top: 20px;
-    
   }
-.banner_content h1{
-     font-size: 36px;
-     font-weight: bold; 
-  }
+  
+  .sponsor_card{
+    margin-left: 3%;
+    margin-right: 5%;
+    display: grid;
+    grid-gap: 5px;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+ }
+ .sponsor_content{
+   margin: 10px;
+   padding-top: 40px;
+   padding-bottom: 40px;
+ } 
 
-  .btn-hero{
-    padding: 18px 25px ;
-    background-color: #FF900E;
-    display: block;
-    margin: 0px auto;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-weight: bold;
-  }
-  .btn-hero:hover{
-    background-color: #ff005c;
-    transition: 1s;
-    transform: rotate(180deg);
-    transition: transform 3s ease-in-out;
-    
-  }
-.banner_content img{
-    width: 80%;
-    display: block;
-    margin: 0px auto;
-   
-}
-.banner_content img:hover{
-   
+  
 }
